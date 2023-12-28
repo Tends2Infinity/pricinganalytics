@@ -50,6 +50,7 @@ esim_data.columns = esim_data.columns.str.strip()
 esim_data['price_per_GB'] = esim_data['usdPrice'] / (esim_data['capacity_MB'] / 1000)
 # Title and Introduction
 st.title("eSIM Market Analysis Dashboard")
+st.write("This dashboard provides a comprehensive analysis of eSIM plans from various providers in each country. Users can navigate through different analyses such as Country, Provider, Plan Type, Pricing etc. Filters at the top allow customization based on Region, Country, Provider, Plan Type, Capacity, and Period.")
 st.markdown("## Explore eSIM plans across various countries and providers")
 
 # Sidebar for page selection and color picker
@@ -66,7 +67,7 @@ if 'page' not in st.session_state:
 def set_page(page_name):
     st.session_state.page = page_name
 
-pages = ["Country Analysis", "Provider Analysis", "Plan Type & Capacity", "Price Analysis", "Trend Analysis", "All Plans"]
+pages = ["Country Analysis", "Provider Analysis", "Plan Type & Capacity", "Pricing Analysis", "All Plans"]
 
 
 for p in pages:
