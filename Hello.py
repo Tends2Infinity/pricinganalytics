@@ -51,6 +51,7 @@ esim_data['price_per_GB'] = esim_data['usdPrice'] / (esim_data['capacity_MB'] / 
 # Title and Introduction
 st.title("eSIM Market Analysis Dashboard")
 st.write("This dashboard provides a comprehensive analysis of eSIM plans from various providers in each country. Users can navigate through different analyses such as Country, Provider, Plan Type, Pricing etc. Filters at the top allow customization based on Region, Country, Provider, Plan Type, Capacity, and Period.")
+st.write("Some simple analysis example- \n\n a) check the global coverage of provider AstroCell \n\n b) compare the price of all providers for 1 GB plan at Singapore etc.")
 st.markdown("## Explore eSIM plans across various countries and providers")
 
 # Sidebar for page selection and color picker
