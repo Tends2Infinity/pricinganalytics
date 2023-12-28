@@ -157,7 +157,7 @@ if st.session_state.page == "Country Analysis":
     with col2:
         # Bar chart of number of plans per country
         st.subheader("Number of eSIM Plans by Country")
-        fig = px.bar(country_count, x='Country', y='Number of Plans', text_auto=True, color='Number of Plans', title="Number of eSIM Plans by Country")
+        fig = px.bar(country_count, x='Country', y='Number of Plans', text_auto=True, color='Number of Plans')
         st.plotly_chart(fig, use_container_width=True)
 
     # Second row of charts
@@ -166,16 +166,16 @@ if st.session_state.page == "Country Analysis":
         # Average price of plans per country
         st.subheader("Average Price of eSIM Plans per Country")
         avg_price_country = filtered_data.groupby('Country')['usdPrice'].mean().reset_index()
-        fig = px.bar(avg_price_country, x='Country', y='usdPrice', text_auto=True, color='usdPrice', title="Average Price of eSIM Plans per Country")
+        fig = px.bar(avg_price_country, x='Country', y='usdPrice', text_auto=True, color='usdPrice')
         fig.update_layout(xaxis_title='Country', yaxis_title='Average Price per Plan')
         st.plotly_chart(fig, use_container_width=True)
 
     with col4:
-        st.subheader("Number of eSIM Plans by Country")
+        st.subheader("Average Price per GB by Country")
         avg_price_per_gb = filtered_data.groupby('Country')['price_per_GB'].mean().reset_index()
 
         # Create a bar chart
-        fig = px.bar(avg_price_per_gb, x='Country', y='price_per_GB', text_auto=True, color='price_per_GB', title='Average Price per GB by Country')
+        fig = px.bar(avg_price_per_gb, x='Country', y='price_per_GB', text_auto=True, color='price_per_GB')
         fig.update_layout(xaxis_title='Country', yaxis_title='Average Price per GB (USD)')
         st.plotly_chart(fig, use_container_width=True)
 
