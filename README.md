@@ -1,7 +1,11 @@
-# Welcome to streamlit
+# Welcome to the Pricing Analytics Dashboard developed using streamlit
 
-This is the app you get when you run `streamlit hello`, extracted as its own app.
+This dashboard provides a comprehensive analysis of eSIM plans from various providers. 
+Users can navigate through different analyses such as Country, Provider, Plan Type, Price, and Trend Analysis. 
+Filters at the top allow customization based on Region, Country, Capacity, and Period. 
+Clickable buttons in the sidebar let users switch between different analytical views. 
+Charts visualize data, offering insights into plan distributions, pricing, and more. 
+Interactive elements and visualizations make it easy to derive meaningful conclusions from the eSIM market data.
 
-Edit [Hello.py](./Hello.py) to customize this app to your heart's desire. ❤️
 
-Check it out on [Streamlit Community Cloud](https://st-hello-app.streamlit.app/)
+Check it out on [Streamlit Community Cloud] (https://pricinganalytics.streamlit.app/)
