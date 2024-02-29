@@ -212,8 +212,9 @@ if st.session_state.page == "Provider Analysis":
 if st.session_state.page == "All Plans":
     st.header("Tabular View of All plans")
     st.dataframe(filtered_data)
-# Implement similar logic for other pages: Provider Analysis, Plan Type & Capacity, Price Analysis, Trend Analysis
-
+# Implement similar logic for other pages: Provider Analysis, Plan Type & Capacity, Pricing Analysis, Trend Analysis
+# Historical Data required for Trend Analysis
+# For each of the provider, identify for which country they have thier best plan
 
 # Show filtered data
 #st.dataframe(filtered_data)
